@@ -1,0 +1,10 @@
+{
+  "liveServer.settings.port": 5505,
+  "liveServer.settings.CustomFiles": [
+    {
+      "match": "**/*.svg",
+      "fn": "location.reload",
+      "injection": "disable"
+    }
+  ]
+}
