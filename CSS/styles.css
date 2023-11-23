@@ -113,6 +113,9 @@
   display: none;
 }
 
+.mobile-menu{
+  display: none;
+}
 
 /* Title heading CSS */
 
@@ -502,8 +505,8 @@ h2 {
   display: flex;
   justify-content: center;
   gap: 24px;
-  margin-left: 150px;
-  margin-right: 150px;
+  
+  flex-wrap: wrap;
 }
 
 .content1-iconcontainer {
@@ -531,6 +534,7 @@ h2 {
   font-family: 'roboto', sans-serif;
   gap: 24px;
   width: 264px;
+  flex-wrap: wrap;
 }
 
 .content1details h3 {
@@ -560,8 +564,16 @@ h2 {
   text-align: center;
   padding-left: 50px;
   padding-right: 50px;
-}
 
+ 
+
+}
+.content3container{
+  display: flex;
+  justify-content: center;
+  gap:8px;
+  flex-wrap: wrap;
+}
 .content3profiles {
   /*design*/
   background-color: var(--White);
@@ -576,6 +588,7 @@ h2 {
   align-items: baseline;
   flex-direction: column;
   justify-content: center;
+  flex-wrap:wrap;
 
   /*paddings and margins*/
   margin-left: 8px;
@@ -598,6 +611,7 @@ h2 {
   margin-right: auto;
   padding: 32px 32px 0px 32px;
   gap: 8px;
+  flex-wrap:wrap;
 }
 
 /*Content 4 CSS*/
@@ -625,6 +639,8 @@ h2 {
 .content4icons {
   display: flex;
   justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
 }
 
 .customer-logo {
@@ -670,6 +686,9 @@ h2 {
   margin-top: 15px;
   margin-right: 8px;
 }
+.footercontainer1{
+  display:flex;
+  flex-direction: row;}
 
 .footer-icon:active {
   background: linear-gradient(
@@ -903,7 +922,116 @@ div .team-icon {
   opacity: 0.9;
   transform: translateY(0);
 }
+/*Tablet Css*/
+@media only screen and (min-width: 768px) and (max-width: 1157px) {
+  
+  .container{
+    margin:auto;
+  }
+  .mobile-menu{
+    display: none;
+  }
 
+  .headerlinks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    padding-left: 75px;
+    padding-right: 75px;
+    flex-wrap: wrap;
+    border-bottom: 1px solid var(--Cornflower);
+    height: 72px;
+    gap: 75px;
+  }
+  .link2{
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .logo{
+    padding-right: 45px;
+  }
+
+.title {
+  background-image: url('../Images/people_office.jpg');
+  background-size: cover;
+  position: relative;
+  background-position: center;}
+
+  .content1-iconcontainer {
+    display: none;
+  }
+  .content1, .content1details {
+    flex-basis: calc(100% / 2 - 30px);
+    margin: 0;
+  }
+  .content1labels{
+    font-size: 24px;
+  }
+
+  .content2 {
+    display: none;
+  }
+
+ 
+ .content3container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  }
+
+
+
+  .content4icons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+   
+  }
+
+  .customers{
+    margin-bottom: 72px;
+  }
+  .footer-inner {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+  }
+ .footer{
+  
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  row-gap: 75px;
+  column-gap: 24px;
+ }
+
+.footer-form{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  column-gap: 40px;
+  margin: 0;
+}
+
+.footer-button{
+  margin: 0;}
+
+}  
+.container{
+  padding: 0;
+  margin: auto;
+}
+.footercontainer1{
+display: flex;
+    flex-direction: row;
+    gap: 24px;
+   
+  }
 /* mobile css*/
 
 @media only screen and (max-width: 767px) {
@@ -912,7 +1040,8 @@ div .team-icon {
     display: none;
   }
 
-  headerlinks-left {
+  
+.headerlinks-left {
 text-align: left;
   }
   .link3{
@@ -924,6 +1053,36 @@ text-align: left;
     border: none;
   }
 
+.modal-label{
+  text-align: left;
+}
+.modal-iconname {
+  position: relative;
+  top: -30px;
+    left: 10px;
+}
+
+.modal-iconphone {
+  position: relative;
+  top: -30px;
+    left: 10px;
+}
+
+.modal-iconemail {
+  position: relative;
+  top: -30px;
+    left: 10px;
+}
+.modal-sendbutton {
+  color: var(--Cornflower);
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: Roboto;
+  font-size: 16px;
+  position: relative;
+  top: 20px;
+left:-5px;
+}
  .headerlinks {
 
   display: flex;
@@ -986,10 +1145,9 @@ text-align: left;
   .footer-button{
   margin: 0 50px;
   padding: 4px 32px;
-
-
   }
 
+  
   /*mobile title*/
 
   .title {
@@ -1040,6 +1198,8 @@ text-align: left;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin:0;
+    
   }
 
   .content1details {
@@ -1073,12 +1233,19 @@ text-align: left;
 
   /*mobile content4*/
   div.content4icons {
-    flex-basis: calc(100% / 3 - 30px);
-    display: block;
-    text-align: center;
+display: flex;
+flex-direction: row;
   }
+
+.customercontainer1, .customercontainer2{
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  flex-wrap: wrap;
+}
   .customers {
     margin: 36px 8px;
+    
   }
 
   /*mobile footer*/
@@ -1113,99 +1280,18 @@ text-align: left;
   .webstudio {
     padding: 0;
   }
-}
-
-/*Tablet Css*/
-@media only screen and (min-width: 768px) and (max-width: 1157px) {
-  .mobile-menu{
-    display: none;
-  }
-
-  .headerlinks {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    flex-direction: column;
-    padding-left: 75px;
-    padding-right: 75px;
-    flex-wrap: wrap;
-    border-bottom: 1px solid var(--Cornflower);
-    height: 72px;
-    gap: 75px;
-  }
-  .link2{
+  .footercontainer1{
     display: flex;
     flex-direction: column;
-    
-  }
-  .logo{
-    padding-right: 45px;
-  }
-
-.title {
-  background-image: url('../Images/people_office.jpg');
-  background-size: cover;
-  position: relative;
-  background-position: center;}
-
-  .content1-iconcontainer {
-    display: none;
-  }
-  .content1, .content1details {
-    flex-basis: calc(50% / 2 - 30px);
-    margin: 0;
-  }
-
-  .content2 {
-    display: none;
-  }
-
-  .content3profiles {
-    flex-basis: calc(100% / 2 - 30px);
-    
-  }
-
-  div.content4icons{
-    flex-basis: calc(100% / 3 - 30px);
-    flex-wrap: wrap;
-  }
-  .footer-inner {
-    display: flex;
-    gap: 24px;
     justify-content: center;
-  }
- .footer{
-  
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-content: flex-end;
-  row-gap: 75px;
-  column-gap: 24px;
- }
-.footer-form{
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  column-gap: 40px;
-  margin: 0;
+      gap: 24px;
+       
 }
 
-.footer-button{
-  margin: 0;}
-
-}  
-.container{
-  padding: 0;
-  margin: auto;
-}
 
 /*desktop css*/
 @media only screen and (min-width: 1158px) {
-  /* .container {
-    width: 1200px;
-  }*/
+ 
   .mobile-menu{
     display: none;
   }
