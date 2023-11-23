@@ -1230,7 +1230,22 @@ left:-5px;
   .content2 {
     display: none;
   }
+/*mobile content3*/
 
+.content3container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.content3profiles{
+
+display: flex;
+flex-direction: column;
+margin-bottom: 72px;
+
+}
   /*mobile content4*/
   div.content4icons {
 display: flex;
