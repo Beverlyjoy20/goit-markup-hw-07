@@ -1092,7 +1092,7 @@ text-align: left;
    justify-content: flex-end;
   }
 
-  button.js-open-menu {
+.js-open-menu {
     border: none;
   }
 
@@ -1156,9 +1156,9 @@ left:-5px;
   }
   
   .mobile-menu {
-    display: none;
+   display:none;
     position: relative;
-    z-index: 9000;
+   
   }
   
   .mobile-links {
