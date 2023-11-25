@@ -476,6 +476,7 @@ textarea {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+
 /* Main CSS */
 .advantages_section {
   margin-top: 60px;
@@ -860,8 +861,7 @@ div .team-icon {
 .flex1{
 flex-basis:calc(100%/ 3 - 120px);
 justify-content: center;
-flex-shrink: 0;
-flex-grow: 0;
+
 }
 
 /*.portfoliocontainer {
@@ -1077,8 +1077,13 @@ flex-grow: 0;
 .link1,.link2  {
     display: none;
   }
-
-  
+.portfoliofilter{
+    display: flex;
+    justify-content: flex-start;
+}
+.portfolioimagesection{
+  margin:0;
+}
 .headerlinks-left {
 text-align: left;
   }
