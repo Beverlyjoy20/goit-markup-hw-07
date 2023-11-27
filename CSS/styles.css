@@ -1363,9 +1363,9 @@ button.js-close-menu{
 }
 /*desktop css*/
 @media only screen and (min-width: 1200px) {
-  .container {
+ /* .container {
     width: 1200px;
-  }
+  }*/
 
   .mobile-menu {
     display: none;
